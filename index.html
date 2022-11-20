@@ -333,13 +333,13 @@
 			</div>
 		</div>
 
-
+		<!-- Update news -->
 		<div class="fdem-row fdem-content  fdem-recessed-content">
 			<div class="fdem-wrap clearfix">
 
 				<div class="fdem-column33 fdem-recessed-secondary-content">
 					<!-- <div class="container"> -->
-					<div style="width:295px;height:420px;overflow:auto;">
+					<div style="width:295px;height:425px;overflow:auto;">
 
 						<div class="fdem-content-container fdem-no-bottom-padding">
 							<div class="fdem-heading-container">
@@ -625,7 +625,7 @@
 
 				</div>
 
-				<div class="col-md-8" style="width:75%;font-size:14px">
+				<div class="col-md-8" style="width:100%;font-size:14px">
 					<!-- <p
 						style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:22px;text-align: center;">
 						<b> <a href="https://geogroup.utoronto.ca/people/" target="_blank">
@@ -639,24 +639,29 @@
 					<h4
 						style="color:#ce0f69;font-family:Barlow Semi Condensed,sans-serif;font-size: 1.3rem;line-height: 1.2;font-weight: 1200;">
 						Projects Working On</h4>
-					<i class="fa fa-tasks"></i><span style="font-size:16px;line-height:1.5"> <a
-							href="images/mainpage/OPENFDEM.gif">
-							<stong> Open-source/free Finite
-								Discrete Element Method (2D/3D) code</stong>.
-						</a> </span>
-					</br>
-					<i class="fa fa-tasks"></i><a style="font-size:16px;line-height:1.5"> Deep Learning in Laboratory
-						Earthquake and PyAE project </a>
-					</br>
-					<i class="fa fa-exchange"></i> <span style="font-size:16px;line-height:1.5">High speed measurements
-						in SHPB tests and deeplearning_hDIC,
-						cooperation
-						project with Institute of
-						Rock and Soil Mechanics, Chinese Academy of Sciences</span> </br>
+					<ul>
+						<div class="section" id="features-and-about-openfdem">
+							<i class="fa fa-tasks"></i><span style="font-size:16px;line-height:1.5;text-indent:2em"> <a
+									href="images/mainpage/OPENFDEM.gif">
+									<stong> Open source/free Finite
+										Discrete Element Method (2D/3D) code</stong>.
+								</a> </span>
+							</br>
+							<i class="fa fa-tasks"></i><a style="font-size:16px;line-height:1.5;text-indent:2em"> Deep
+								Learning in Laboratory
+								Earthquake and PyAE project </a>
+							</br>
+							<i class="fa fa-exchange"></i> <span
+								style="font-size:16px;line-height:1.5;text-indent:2em">High speed measurements
+								in SHPB tests and deeplearning_hDIC,
+								cooperate
+								project with Institute of
+								Rock and Soil Mechanics, Chinese Academy of Sciences</span> </br>
 
 
-					</br>
-
+							</br>
+						</div>
+					</ul>
 
 					<h4
 						style="color:#ce0f69;font-family:Barlow Semi Condensed,sans-serif;font-size: 1.3rem;line-height: 1.2;font-weight: 1200;">
@@ -685,7 +690,7 @@
 
 							<ul class="simple">
 								<li style="font-size:16px;line-height:  1.2;"> Open-source code projects: <strong>
-										OpenFDEM</strong> (source code is accessible on request, contact the developer-
+										OpenFDEM</strong> (source code is accessible on request, contact the developer -
 									<a style="color:rgb(30, 105, 255)"> Dr. Xiaofeng Li</a>)
 								</li>
 								<li style="font-size:16px;line-height: 1.2;"> High speed measurements technology and
@@ -718,19 +723,20 @@
 								architecture for solving
 								<strong>multiscale, multiphase and multiphysics</strong> (3M) problems that operates on
 								various platforms. The applications are,
-								but not limited to, mechanical, thermal and fluid mechanics problems. Additional
-								acceleration techniques will be
-								used to boost the calculation. This project started from 2018 when I was a PhD candidate
+								but not limited to, mechanical, thermal and fluid problems. Additional
+								acceleration techniques are used to boost the calculation. This project started from
+								2018 when I was a PhD candidate
 								in Monash
-								University, and the very basic version was finished in 2020 when I was in Institute of
+								University, and the very basic version was finished in 2020 when I graduated from
+								Institute of
 								Rock and Soil Mechanics. After
-								that, I turned to full-time and continuted this project
-								in University of Toronto from September in 2021.
-								I will release the project on the workshop <strong>
+								that, I turned to a full-time developer and PI of this project
+								in University of Toronto since September in 2021.
+								I will release the executable code on the workshop <strong>
 									"FDEM-2022
 									– Modeling innovations and numerical experiments in geomechanics"</strong>, held in
 								Toronto on
-								December 8-9, 2022. The main new features of OpenFDEM are:
+								December 8-9, 2022. To far, the main new features of OpenFDEM are:
 							</p>
 							<p style="text-align:justify;font-size:16px;color: #ce0f69;"><strong>Object Oriented
 									Architecture (C++ and Cuda)</strong>
@@ -773,7 +779,7 @@
 										order of three to rebuild the large deformation within the entity, and the
 										kinematic is able to construct a nonlinear deformation. The Hilber-Hughes-Taylor
 										(HHT) time integration scheme (second-order accuracy) is employed for the
-										explicit solver. The Y-based codes are limited to the first order time
+										explicit solver. The Y-like codes are limited to the first order time
 										integration and constant strain element.</p>
 
 								</li>
@@ -793,11 +799,12 @@
 								</div>
 								<li>
 									<p style="text-align:justify;font-size:16px"><strong>Friendly preprocessing
-											interface</strong> - The Gmsh API is provided to
-										quickly create meshes from CAD, geometry file and third-party commercial
+											interface</strong> - The Gmsh is provided to
+										easily create meshes from CAD, geometry file and third-party commercial
 										software. The built-in commands are accessible to crate many basic geometries
-										(rectangular, circle, ellipse, polygon, line, particles) and initial
-										discontinuities (single joint, joint sets, DFNs, DFNs from image mapping). The
+										(e.g. rectangular, circle, ellipse, polygon, line and particles) and initial
+										discontinuities (e.g. single joint, joint sets, DFNs and DFNs from image
+										mapping). The
 										built-in mesh module is able to quickly assess mesh quality and the local bad
 										meshes will be further optimized by swap, node insertion, node delete, element
 										split techniques, automatically or manually.</p>
@@ -881,7 +888,7 @@
 											field of quasibrittle materials and rich element library</strong> -
 										currently, <strong>OpenFDEM</strong> supports 17 element materials spanning
 										elastic,
-										hyperelastic, plastic, damage, nonlocal, viscous and phsefiled models, supports
+										hyperelastic, plastic, damage, nonlocal, viscous and phasefield models, supports
 										7 cohesive materials spanning static, dynamic and fatigue problems. It also
 										supports 6 contact models including Mohr-coulomb friction, hertz contact, rate
 										friction, rough dilation shear law and so on. (The <strong>OpenFDEM</strong> is
@@ -912,20 +919,23 @@
 								<div class="image-container">
 									<div class="field field-name-field-image field-type-image field-label-hidden">
 										<div class="field-items">
-											<div class="field-item even"><a href="images/index/globalAMRPhase.gif"><p style="text-align:center"><img width="600"
-														typeof="foaf:Image" class="fdem-scale-with-grid"
-														src="images/index/globalAMRPhase.gif" /></a>
-													</p>
+											<div class="field-item even"><a href="images/index/globalAMRPhase.gif">
+													<p style="text-align:center"><img width="600" typeof="foaf:Image"
+															class="fdem-scale-with-grid"
+															src="images/index/globalAMRPhase.gif" />
+												</a>
+												</p>
 											</div>
 										</div>
-										<p style="text-align:center">Phasefield module implemented in OpenFDEM.</p>
+										<p style="text-align:center">Phasefield module in OpenFDEM.</p>
 									</div>
 								</div>
 								<li>
 									<p style="text-align:justify;font-size:16px"><strong>Advanced analysis
-											solvers</strong> - linear
-										dynamic (implicit and explicit), linear static
-										(using PETSC) and nonlinear dynamic (explicit) are applicable for different
+											solvers</strong> - Linear
+										dynamic solver (implicit and explicit), linear static
+										solver (PETSC) and nonlinear dynamic solver (explicit) are applicable for
+										different
 										problems (The <strong>OpenFDEM</strong> is the only project provides implicit
 										solver for
 										FDEM-like codes).</p>
@@ -937,7 +947,7 @@
 							<ul class="simple">
 								<li>
 									<p style="text-align:justify;font-size:16px"><strong>Rigid DEM support</strong> -
-										built in module for rigid particles packing,
+										built-in module for rigid particles packing,
 										kinematics and collision, the particle-based contact models include linear,
 										Hertz, cohesive bond and rotation resistance model.</p>
 								</li>
@@ -954,7 +964,7 @@
 								</div>
 								<li>
 									<p style="text-align:justify;font-size:16px"><strong>Realistic Particle
-											Modelling</strong> - overlapping particles and
+											Modelling</strong> - Overlapping particles and
 										Fourier-Voronoi-based algorithm are used to generate realistic particles having
 										complex shapes. The realistic particles can be rigid or deformable, the breakage
 										of the particles are also possible.</p>
@@ -1012,7 +1022,8 @@
 														src="images/index/tube.gif" /></a>
 											</div>
 										</div>
-										<p style="text-align:center">Water flowing in a tube using CFD in hydro module.</p>
+										<p style="text-align:center">Water flowing in a tube using CFD in hydro module.
+										</p>
 									</div>
 								</div>
 							</ul>
@@ -1094,7 +1105,7 @@
 								</li>
 							</ul>
 							<p style="text-align:justify;font-size:16px;color: #ce0f69;"><strong>Third-Party Packages
-									in	OpenFDEM</strong>:</p>
+									in OpenFDEM</strong>:</p>
 							<ul class="simple">
 								<li>
 									<p style="text-align:justify;font-size:16px;"><code
