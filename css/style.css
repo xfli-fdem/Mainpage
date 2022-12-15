@@ -2,7 +2,13 @@
 Scorilo 1.0.1 - HTML Template by WowThemes.net
 Visit: https://www.wowthemes.net
 ================================================== */
-
+body {
+	font-family:Roboto,Sans-serif;
+	font-weight:300;
+	font-size:20px;
+	color:rgb(61, 61, 61,0.8);
+	line-height:1.9;
+}
 h1,h2,h3,h4,h5,h6 {
 	font-family:Roboto,Sans-serif;
 	font-weight:700;
