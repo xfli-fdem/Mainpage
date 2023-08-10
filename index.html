@@ -348,6 +348,33 @@
 							</div>
 						</div>
 
+						<!-- website  -->
+						<div class="views-row views-row-1 views-row-odd views-row-first">
+
+							<div class="fdem-content-container fdem-side-padding">
+								<div class="fdem-listing-item fdem-news-listing clearfix">
+
+									<p class="fdem-listing-title"><a href="https://openfdem.com/"
+											style="color: #170cb9;font-weight: 400;">News! our OpenFDEM website is online.
+										</a> </p>
+									<p class="fdem-datestamp"><span datatype="xsd:dateTime">08
+											August 2023</span></p>
+
+									<div class="field field-name-body field-type-text-with-summary field-label-hidden">
+										<div class="field-items">
+											<div class="field-item even" property="content:encoded">
+												<p><strong> OpenFDEM </strong> website is online to public under the contribution by Dr. Xiaofeng Li,  Katia (Ekaterina) Ossetchkina and Yuqi (Grace) Hu.
+													The future news about OpenFDEM will be hosted on this webiste and the users can also download the software from this address. Try it <a
+														href="https://openfdem.com/"
+														style="color: #170cb9;font-weight: 400;">at here.</a> </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
 
 						<!-- Scientific editor on JRMGE  -->
 						<div class="views-row views-row-1 views-row-odd views-row-first">
@@ -366,7 +393,7 @@
 									<div class="field field-name-body field-type-text-with-summary field-label-hidden">
 										<div class="field-items">
 											<div class="field-item even" property="content:encoded">
-												<p><strong> JRMGE </strong> (newest IF = 5.92) aims to publish the
+												<p><strong> JRMGE </strong> (newest impact factor = 7.3) aims to publish the
 													latest
 													research achievements in rock
 													mechanics and geotechnical engineering. All articles published open
@@ -717,13 +744,14 @@
 						OpenFDEM New Features </h4>
 					<ul>
 						<div class="section" id="features-and-about-openfdem">
-							<p style="text-align:justify;font-size:16px"><strong>OpenFDEM </strong> aims to be a free finite and discrete
-								element solver with object-oriented
-								architecture for solving
-								<strong>multiscale, multiphase and multiphysics</strong> (3M) problems that operates on
-								various platforms. The applications are,
-								but not limited to, mechanical, thermal and fluid problems. Additional
-								acceleration techniques are used to boost the calculation. This project started from
+							<p style="text-align:justify;font-size:16px"><strong>OpenFDEM </strong> is an open-source(free) and object-oriented finite and discrete element solver for solving diverse <strong>multiscale,
+								multiphase and multiphysics</strong> (3M) problems accurately with high performance computations. Its applications include but
+								are not limited to mechanical, thermal and fluid dynamics. OpenFDEM also provides a wide range of flexibility in
+								geometry, mesh and material modules.<strong>OpenFDEM </strong> is constructed by C++, and can be operated with an extensive Python C++ interface.</p>
+								
+								<p style="text-align:justify;font-size:16px"> <strong>OpenFDEM </strong> is open-free (first stage) or open-source (second stage) under GNU license and can be used even in comercial softwares as it is before properly get the copyright from
+								the developer.</p>
+								<p style="text-align:justify;font-size:16px">This project started from
 								2018 when I was a PhD candidate
 								in Monash
 								University, and the very basic version was finished in 2020 when I graduated from
@@ -756,17 +784,10 @@
 									DEM Kernel</strong> (OpenFDEMlib)</p>
 							<ul class="simple">
 								<li>
-									<p style="text-align:justify;font-size:16px"><strong>Fully extendable and
-											portable</strong> - The kernel is extendable in any
-										“direction”. The possibility of adding new element types, new material models
-										with any element type and number of internal history parameters, new boundary
-										conditions (time-dependent, position-dependent, state-dependent, periodic and
-										flow-in/out) or numerical algorithms (explicit and implicit), as well as ability
-										to add and manage arbitrary degrees of freedom is matter of course. (It is not a
-										Y-like code which is only limited to triangle element, Q4 cohesive element and
-										triangle-triangle contact, <strong>OpenFDEM</strong> aims to be a more general
-										FEM/DEM solver can
-										be compatible to arbitrary scenarios)</p>
+									<p style="text-align:justify;font-size:16px"><strong>Fully extendable and portable</strong> - The kernel can be extended in any “direction”. Adding new element types, new materials with any element types and internal history parameters, new boundary conditions (time-dependent, position-dependent, state-dependent, periodic and flow-in/out)
+										or numerical algorithms (explicit and implicit) is possible, as well as the ability to add and manage arbitrary degrees of freedom is a matter of course.
+										(<strong>OpenFDEM</strong> is intended to be a more general FEM/DEM solver compatible with arbitrary scenarios.) Like other general open-source FEM solvers, the most important
+										feature of <strong>OpenFDEM</strong> is its standardization and generality, which allows the continuum-discontinuum method to be used with more general scenarios. The limitation of this project is the developers’ thoughts, rather than the method itself.</p>
 								</li>
 								<div class="image-container">
 									<div class="field field-name-field-image field-type-image field-label-hidden">
@@ -781,28 +802,21 @@
 								</div>
 								<li>
 									<p style="text-align:justify;font-size:16px"><strong>Highly accurate and
-											reliable</strong> - The kernel provides high-order
-										integration schemes and solving methods to seek more reliable numerical results
-										which are comparable to theoretical solutions. The element type has a maximum
-										order of three to rebuild the large deformation within the entity, and the
-										kinematic is able to construct a nonlinear deformation. The Hilber-Hughes-Taylor
-										(HHT) time integration scheme (second-order accuracy) is employed for the
-										explicit solver. The Y-like codes are limited to the first order time
-										integration and constant strain element.</p>
+											reliable</strong> - The kernel provides high-order integration schemes and solving methods to seek more reliable numerical
+											results which are comparable to theoretical solutions. The element type has a maximum order of three to accurately reproduce the large deformation behavior
+											whithin the entity, and the new kinematic scheme to construct a nonlinear deformation. The Hilber-Hughes-Taylor (HHT) time integration scheme
+											(second-order accuracy) is used for the explicit solver.</p>
 
 								</li>
 								<div class="image-container">
 									<div class="field field-name-field-image field-type-image field-label-hidden">
 										<div class="field-items">
-											<div class="field-item even"><a href="images/index/elementshape.png"><img
+											<div class="field-item even"><a href="images/index/feature2.svg"><img
 														typeof="foaf:Image" class="fdem-scale-with-grid"
-														src="images/index/elementshape.png" /></a>
+														src="images/index/feature2.svg" /></a>
 											</div>
 										</div>
-										<p style="text-align:center">Quadratic elements are supported in OpenFDEM.
-											Combined linear element (quadrilateral and triangle elements, left),
-											quadratic quadrilateral element (middle) and refined linear
-											quadrilateral element (right).</p>
+										<p style="text-align:center">OpenFDEM feature.</p>
 									</div>
 								</div>
 								<li>
@@ -827,7 +841,7 @@
 										is
 										proposed to make the contact searching process is parallelable. Built-in
 										high-level support for dynamic load balancing. The GPU acceleration will be also
-										added shortly.</p>
+										open shortly.</p>
 								</li>
 								<li>
 									<p style="text-align:justify;font-size:16px"><strong>Mesh adaptive analysis
@@ -845,7 +859,7 @@
 										<div class="field-items">
 											<div class="field-item even"><a href="images/index/AMR.gif"><img
 														typeof="foaf:Image" class="fdem-scale-with-grid"
-														src="images/index/AMR.gif" width="800" /></a>
+														src="images/index/AMR.gif" /></a>
 											</div>
 										</div>
 										<p style="text-align:center">Global adaptive mesh refinement (up-left) and local
@@ -891,28 +905,12 @@
 									</div>
 								</div>
 								<li>
-									<p style="text-align:justify;font-size:16px"><strong>Large material library
-											including the state-of-the-art models for phase
-											field of quasibrittle materials and rich element library</strong> -
-										currently, <strong>OpenFDEM</strong> supports 17 element materials spanning
-										elastic,
-										hyperelastic, plastic, damage, nonlocal, viscous and phasefield models, supports
-										7 cohesive materials spanning static, dynamic and fatigue problems. It also
-										supports 6 contact models including Mohr-coulomb friction, hertz contact, rate
-										friction, rough dilation shear law and so on. (The <strong>OpenFDEM</strong> is
-										the only code
-										supports materials beyond the community of rock mechanics)</p>
+									<p style="text-align:justify;font-size:16px"><strong>Large material library</strong> -
+										currently, <strong>OpenFDEM</strong> supports 17 element materials (including elastic, hyperelastic, plastic, damage, nonlocal, viscous and phas—field models), 7 cohesive materials (spanning static, dynamic and fatigue problems),
+										and 6 contact models (including Mohr-coulomb friction, hertz contact, rate friction, rough dilation shear law and so on).</p>
 								</li>
 								<div class="image-container">
-									<div class="field field-name-field-image field-type-image field-label-hidden">
-										<div class="field-items">
-											<div class="field-item even"><a href="images/index/feature2.png">
-													<p style="text-align:center"><img typeof="foaf:Image"
-															class="fdem-scale-with-grid"
-															src="images/index/feature2.png" />
-												</a>
-											</div>
-										</div>
+									<div class="field field-name-field-image field-type-image field-label-hidden">									
 										<div class="field-items">
 											<div class="field-item even"><a href="images/index/feature.png">
 													<p style="text-align:center"><img typeof="foaf:Image"
@@ -929,7 +927,7 @@
 									<div class="field field-name-field-image field-type-image field-label-hidden">
 										<div class="field-items">
 											<div class="field-item even"><a href="images/index/globalAMRPhase.gif">
-													<p style="text-align:center"><img width="600" typeof="foaf:Image"
+													<p style="text-align:center"><img  typeof="foaf:Image"
 															class="fdem-scale-with-grid"
 															src="images/index/globalAMRPhase.gif" />
 												</a>
@@ -941,13 +939,8 @@
 								</div>
 								<li>
 									<p style="text-align:justify;font-size:16px"><strong>Advanced analysis
-											solvers</strong> - Linear
-										dynamic solver (implicit and explicit), linear static
-										solver (PETSC) and nonlinear dynamic solver (explicit) are applicable for
-										different
-										problems (The <strong>OpenFDEM</strong> is the only project provides implicit
-										solver for
-										FDEM-like codes).</p>
+											solvers</strong> - Linear dynamic solver (implicit and explicit), linear static solver (PETSC), eigenvalue problem (SLEPc),
+											and nonlinear dynamic solver (explicit) are applicable for different problems, the implicit solver currently can be run on Linux-like OS.</p>
 								</li>
 							</ul>
 							<p style="text-align:justify;font-size:16px;color: #ce0f69;"><strong>Particle Discrete
@@ -1022,12 +1015,12 @@
 								<div class="image-container">
 									<div class="field field-name-field-image field-type-image field-label-hidden">
 										<div class="field-items">
-											<div class="field-item even"><a href="images/index/Hydralic.gif"><img
+											<div class="field-item even"><a href="images/index/water.gif"><img
 														typeof="foaf:Image" class="fdem-scale-with-grid"
-														src="images/index/Hydralic.gif" /></a>
+														src="images/index/water.gif" /></a>
 											</div>
 										</div>
-										<p style="text-align:center">Fluid injection in fractured rock block.
+										<p style="text-align:center">Fluid injection in fractured rock block (left),  Water flowing in a tube using CFD in hydro module (right).
 										</p>
 									</div>
 								</div>
@@ -1036,18 +1029,7 @@
 										level, porepressure, flow rate, steady
 										flow and impermeable boundary conditions are supported in hydro module.</p>
 								</li>
-								<div class="image-container">
-									<div class="field field-name-field-image field-type-image field-label-hidden">
-										<div class="field-items">
-											<div class="field-item even"><a href="images/index/tube.gif"><img
-														typeof="foaf:Image" class="fdem-scale-with-grid"
-														src="images/index/tube.gif" /></a>
-											</div>
-										</div>
-										<p style="text-align:center">Water flowing in a tube using CFD in hydro module.
-										</p>
-									</div>
-								</div>
+								
 							</ul>
 							<p style="text-align:justify;font-size:16px;color: #ce0f69;"><strong>Thermal transportation
 									module</strong>
@@ -1174,6 +1156,68 @@
 
 						</div>
 					</ul>
+
+
+				</br>
+					<h4
+					style="color:#ce0f69;font-family:Barlow Semi Condensed,sans-serif;font-size: 1.3rem;line-height: 1.2;font-weight: 1200;">
+					Call for papers </h4>
+
+					<div style="height: 5px;"></div><img alt="special_issue png" src="images/index/special_issue.png" />
+				</br>
+				<ul>
+				</br>
+					<div class="section" id="features-and-about-openfdem">
+						<p style="text-align:justify;font-size:16px"> We would like to invite you to submit a contribution to a featured journal issue on FDEM that will be published on <strong>J. Rock Mech. Geotech.</strong> (Impact Factor = 7.3, ranking 2/41 in Engineering and geological) in 2024.</p>
+						<p style="text-align:justify;font-size:16px"><a class="reference external" href="https://www.sciencedirect.com/journal/journal-of-rock-mechanics-and-geotechnical-engineering">https://www.sciencedirect.com/journal/journal-of-rock-mechanics-and-geotechnical-engineering</a>.</p>
+						<p style="text-align:justify;font-size:16px">The combined hybrid finite-discrete element method (FDEM) is widely used for modeling fracturing and fragmentation processes in brittle materials such as rock and concrete. The intrinsic advantage of FDEM derives by its ability to combine continuum mechanics formulations, such as finite strain-based deformability and non-linear fracture mechanics, with discrete element method, allowing the seamless transition from a continuum to a discontinuum model. FDEM allows to model multiple crack initiation, propagation and nucleation at micro scale to fractures or fragments at macro scale. These advances promote the applications of FDEM in geomechanics, energy storage, geothermal energy extraction, rock engineering, oil and gas exploration and mining. In recent decades, the FDEM has matured into a more general-purpose numerical method, covering mechanical, hydraulic, thermal and chemical coupling, that can be used to tackle increasingly more complex multiphase, multiphysics and multiscale problems.</p>
+						<p style="text-align:justify;font-size:16px">This <strong>Special Issue</strong> aims to highlight the new advances and future developments of combined finite-discrete element method or continuum-discontinuum method,
+						for fracturing and fragmentation in geomechanics, underground energy storage, nuclear waste disposal, enhanced geothermal system, civil engineering or mining.
+						All the papers on this special issue will be <strong>open access and free</strong>.</p>
+						<p style="text-align:justify;font-size:16px">The main topic includes but not limited to:</p>
+
+					
+							<ul class="simple">
+							<li><p style="text-align:justify;font-size:16px;">Multiscale, multiphase, and multiphysics modeling of fracture and fragmentation in rock mechanics and rock engineering</p></li>
+							<li><p style="text-align:justify;font-size:16px;">New advances and future developments of combined finite-discrete element method</p></li>
+							<li><p style="text-align:justify;font-size:16px;">High-Performance computing application and large-scale modelling in combined finite-discrete element method</p></li>
+							<li><p style="text-align:justify;font-size:16px;">Novel contact algorithms for high efficiency and accuracy</p></li>
+							<li><p style="text-align:justify;font-size:16px;">Hydraulic fracturing and fluid transportation modelling in energy storage or fractured reservoirs</p></li>
+							<li><p style="text-align:justify;font-size:16px;">THM(C) coupling in enhanced geothermal systems (EGS), underground hydrogen storage (UHS), nuclear waste disposal and CO2 storage</p></li>
+							<li><p style="text-align:justify;font-size:16px;">Computational fluid dynamics and fluid-solid interaction for rock fracturing modelling</p></li>
+							<li><p style="text-align:justify;font-size:16px;">Artificial intelligence and machine learning technique in combined finite-discrete element method</p></li>
+							</ul>
+						</br>
+							<p style="text-align:justify;font-size:16px">You are invited to submit your manuscript at any time before the submission deadline. For any inquiries about the appropriateness of contribution topics, please contact Dr. Xiaofeng Li via <a class="reference external" href="mailto:xiaofeng&#46;li&#37;&#52;&#48;utoronto&#46;ca">xiaofeng<span>&#46;</span>li<span>&#64;</span>utoronto<span>&#46;</span>ca</a>.</p>
+							<section id="guest-editors">
+							<h3>Guest Editors<a class="headerlink" href="#guest-editors" title="Permalink to this heading"></a></h3>
+							<dl>
+							<dt>Dr. Giovanni Grasselli</dt><dd><div class="line-block">
+							<div class="line">Department of Civil &amp; Mineral Engineering</div>
+							<div class="line">University of Toronto, Toronto, CA, Canada</div>
+							<div class="line">Email: <a class="reference external" href="mailto:giovanni&#46;grasselli&#37;&#52;&#48;utoronto&#46;ca">giovanni<span>&#46;</span>grasselli<span>&#64;</span>utoronto<span>&#46;</span>ca</a></div>
+							</div>
+							</dd>
+						</br>
+							<dt>Dr. Haibo Li</dt><dd><div class="line-block">
+							<div class="line">Institute of Rock and Soil Mechanics</div>
+							<div class="line">Chinese Academy of Sciences, Wuhan, China</div>
+							<div class="line">Email: <a class="reference external" href="mailto:hbli&#37;&#52;&#48;whrsm&#46;ac&#46;cn">hbli<span>&#64;</span>whrsm<span>&#46;</span>ac<span>&#46;</span>cn</a></div>
+							</div>
+							</dd>
+						</br>
+							<dt>Dr. Xiaofeng Li</dt><dd><div class="line-block">
+							<div class="line">Department of Civil &amp; Mineral Engineering</div>
+							<div class="line">University of Toronto, Toronto, CA, Canada</div>
+							<div class="line">Email: <a class="reference external" href="mailto:xiaofeng&#46;li&#37;&#52;&#48;utoronto&#46;ca">xiaofeng<span>&#46;</span>li<span>&#64;</span>utoronto<span>&#46;</span>ca</a></div>
+							</div>
+							</dd>
+							</dl>
+					</div>
+				</ul>
+
+
+
 					</p>
 				</div>
 			</div>
